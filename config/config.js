@@ -6,10 +6,10 @@ exports.creds = {
      *  domains in B2C
      *  Must be a custom domain name. For example: https://login.contoso.com
     */
-    identityMetadata: 'https://login.thegamesstore.in/thegamesstore.in/v2.0/.well-known/openid-configuration',
+    identityMetadata: 'https://login.yourdomain.com/yourdomain.com/v2.0/.well-known/openid-configuration',
 
     // Required, the client ID of your app in AAD 
-    clientID: '9cecd5f5-e0a0-4fd4-9d32-6ceceb941472',
+    clientID: 'CLIENT_ID',
 
     // Required, must be 'code', 'code id_token', 'id_token code' or 'id_token' 
     // If you want to get access_token, you must be 'code', 'code id_token' or 'id_token code'
@@ -21,7 +21,7 @@ exports.creds = {
     // Required, the reply URL registered in AAD for your app
     // Make sure the redirect url for the app is also in the same domain as the B2C's custom domain
     // For eg: If the Custom domain name is contoso.com then the redurirect url should be "https://app.contoso.com/..."
-    redirectUrl: 'https://app4.thegamesstore.in/auth/openid/return', 
+    redirectUrl: 'https://app.yourdomain.com/auth/openid/return', 
     //redirectUrl: 'http://localhost:4000/auth/openid/return',
 
     // Required if we use http for redirectUrl
@@ -29,7 +29,7 @@ exports.creds = {
 
     // Required if `responseType` is 'code', 'id_token code' or 'code id_token'. 
     // If app key contains '\', replace it with '\\'.
-    clientSecret: 'zYMQyDJBV_~J819g27B.f.r1q38-mAZ1co',
+    clientSecret: 'CLIENT_SECRET',
     
     // Required, must be true for B2C
     isB2C: true,
@@ -78,8 +78,8 @@ exports.creds = {
 // replace <tenant_name> with your tenant name, and
 // replace <signin_policy_name> with your signin policy name.
 exports.destroySessionUrl = 
-  'https://login.thegamesstore.in/thegamesstore.in/oauth2/v2.0/logout?p=B2C_1A_EMBEDDEDSIGNIN_SIGNUP_SIGNIN' +
-  '&post_logout_redirect_uri=https://app4.thegamesstore.in/';
+  'https://login.yourdomain.com/yourdomain.com/oauth2/v2.0/logout?p=B2C_1A_EMBEDDEDSIGNIN_SIGNUP_SIGNIN' +
+  '&post_logout_redirect_uri=https://app.yourdomain.com/';
   // 'https://login.thegamesstore.in/thegamesstore.in/oauth2/v2.0/logout?p=B2C_1A_EMBEDDEDSIGNIN_SIGNUP_SIGNIN' +
   // '&post_logout_redirect_uri=http://localhost:4000/';
 
