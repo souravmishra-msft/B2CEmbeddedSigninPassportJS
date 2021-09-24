@@ -22,7 +22,7 @@ exports.creds = {
     // Make sure the redirect url for the app is also in the same domain as the B2C's custom domain
     // For eg: If the Custom domain name is contoso.com then the redurirect url should be "https://app.contoso.com/..."
     redirectUrl: 'https://app.yourdomain.com/auth/openid/return', 
-    //redirectUrl: 'http://localhost:4000/auth/openid/return',
+ 
 
     // Required if we use http for redirectUrl
     allowHttpForRedirectUrl: true,

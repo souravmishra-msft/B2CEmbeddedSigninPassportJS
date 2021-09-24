@@ -123,7 +123,7 @@ Blocked autofocusing on a <input> element in a cross-origin subframe.
 
 ### Step 10: Run the sample
 
-1. To locally run the sample, you can use `npm run start` or in dev environment you can use npm run `start-dev`.
+1. To locally run the sample, you can use `npm run start` or in dev environment you can use `npm run start-dev`.
 1. You can also upload this sample as an App Service and configure the App Service to use HTTPS.
 1. If you don't have an account registered on the **Azure AD B2C** used in this sample, follow the sign up process. Otherwise, input the email and password for your account and click on **Sign in**.
 
